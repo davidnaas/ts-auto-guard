@@ -79,6 +79,10 @@ export function testProcessProject(
         }
 
         const expectedText = expectedFile.getText()
+        console.log('-----')
+        console.log(sourceText)
+        console.log(expectedText)
+
         t.equal(sourceText, expectedText, `${filePath} should match`)
       }
     }
